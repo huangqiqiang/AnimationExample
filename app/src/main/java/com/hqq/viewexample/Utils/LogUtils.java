@@ -12,9 +12,13 @@ package com.hqq.viewexample.Utils;
 import android.util.Log;
 
 /**
- * Log工具类 d e i v w五种打印 Log功能默认关闭。需要手动更改DEBUG的值
- * 
- * @author yougui_zheng
+ * @author: huangqiqiang
+ * 在此写用途
+ * @FileName:
+ *          ${PACKAGE_NAME}.${NAME}.java
+ * @emain: 593979591@qq.com
+ * @date: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}
+ * @version V1.0 <描述当前版本功能>
  */
 public class LogUtils {
 	/**

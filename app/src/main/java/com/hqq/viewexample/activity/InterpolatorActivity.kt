@@ -7,6 +7,7 @@ import com.hqq.viewexample.R
 import kotlinx.android.synthetic.main.activity_interpolator.*
 
 /**
+ * 插值器
  * http://blog.csdn.net/harvic880925/article/details/40049763
  */
 class InterpolatorActivity : AppCompatActivity() {
