@@ -17,7 +17,7 @@ import com.hqq.viewexample.Utils.LogUtils;
  * @Package : com.hqq.viewexample
  * @FileName :   QuadView
  * @Date : 2017/12/25  10:15
- * @Descrive : TODO
+ * @Descrive : TODO http://blog.csdn.net/harvic880925/article/details/50995587
  * @Email :
  */
 

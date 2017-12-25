@@ -16,7 +16,7 @@ import android.view.animation.LinearInterpolator;
  * @Package : com.hqq.viewexample.view
  * @FileName :   WaveView
  * @Date : 2017/12/25  11:24
- * @Descrive : TODO
+ * @Descrive : TODO http://blog.csdn.net/harvic880925/article/details/50995587
  * @Email :
  */
 
