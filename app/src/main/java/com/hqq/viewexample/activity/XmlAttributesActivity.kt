@@ -3,6 +3,7 @@ package com.hqq.viewexample.activity
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
+import android.view.animation.ScaleAnimation
 import com.hqq.viewexample.R
 import kotlinx.android.synthetic.main.activity_xml_attributes.*
 
@@ -29,6 +30,9 @@ class XmlAttributesActivity : AppCompatActivity() {
         btn_scale1.setOnClickListener {
             // 放大 1.4  50% 的位置  700  毫秒
             btn_scale1.startAnimation(AnimationUtils.loadAnimation(this, R.anim.scale_1))
+        //    var scale = ScaleAnimation(0f, 0f, 1.4f, 1.4f);
+
+
         }
         /**  Animation类继承的属性
          *android:duration     动画持续时间，以毫秒为单位
