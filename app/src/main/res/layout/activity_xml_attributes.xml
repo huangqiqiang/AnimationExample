@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hqq.viewexample.activity.XmlAttributesActivity">
+
+    <Button
+        android:id="@+id/btn_scale1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="scale1" />
+
+    <Button
+        android:id="@+id/btn_scale2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_scale1"
+        android:layout_alignRight="@+id/btn_scale1"
+        android:layout_below="@+id/btn_scale1"
+        android:layout_marginTop="26dp"
+        android:text="scale2" />
+
+    <Button
+        android:id="@+id/btn_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_scale2"
+        android:layout_alignStart="@+id/btn_scale2"
+        android:layout_below="@+id/btn_scale2"
+        android:layout_marginTop="20dp"
+        android:text="Alpha1" />
+
+    <Button
+        android:id="@+id/btn_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_alpha"
+        android:layout_alignRight="@+id/btn_alpha"
+        android:layout_below="@+id/btn_alpha"
+        android:layout_marginTop="39dp"
+        android:text="rotate" />
+
+    <Button
+        android:id="@+id/btn_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_rotate"
+        android:layout_alignStart="@+id/btn_rotate"
+        android:layout_below="@+id/btn_rotate"
+        android:layout_marginTop="25dp"
+        android:text="translate" />
+
+    <Button
+        android:id="@+id/btn_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_translate"
+        android:layout_alignStart="@+id/btn_translate"
+        android:layout_below="@+id/btn_translate"
+        android:layout_marginTop="33dp"
+        android:text="set" />
+
+
+</RelativeLayout>
