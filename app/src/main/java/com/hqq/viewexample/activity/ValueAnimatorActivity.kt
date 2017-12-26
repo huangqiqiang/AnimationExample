@@ -1,5 +1,6 @@
 package com.hqq.viewexample.activity
 
+import android.animation.ObjectAnimator
 import android.animation.TimeInterpolator
 import android.animation.TypeEvaluator
 import android.animation.ValueAnimator
@@ -61,6 +62,7 @@ class ValueAnimatorActivity : AppCompatActivity() {
             pv_point.doPointAnim()
 
         }
+
 
     }
 

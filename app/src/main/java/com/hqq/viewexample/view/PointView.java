@@ -37,7 +37,7 @@ public class PointView extends View {
 
     }
 
-    private Point mCurPoint;
+    private Point mCurPoint=new Point(10);
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -65,6 +65,13 @@ public class PointView extends View {
         valueAnimator.start();
 
     }
+
+    void setPointRadius(int radius){
+        mCurPoint.setRadius(radius);
+        invalidate();
+    }
+
+
     public class PointEvaluator implements TypeEvaluator<Point> {
         @Override
         public Point evaluate(float fraction, Point startValue, Point endValue) {

@@ -12,17 +12,17 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".activity.HandwritingActivity" />
         <activity android:name=".activity.WaveActivity" />
-        <activity android:name=".activity.XmlAttributesActivity"></activity>
-        <activity android:name=".activity.InterpolatorActivity">
+        <activity android:name=".activity.XmlAttributesActivity" />
+        <activity android:name=".activity.InterpolatorActivity"></activity>
+        <activity android:name=".activity.ValueAnimatorActivity">
 
         </activity>
-        <activity android:name=".activity.ValueAnimatorActivity">
+        <activity android:name=".activity.ObjectAnimatorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

@@ -12,9 +12,9 @@
 * set 集合
 ## 属性动画 Property Animation 
 是通过动画的方式来改变View的属性。
-ValueAnimator   动画 ofInt 属性 区间
-Interpolator  插值器/加速器
-Evaluator 就是将从加速器返回的数字进度转成对应的数字值
+* ValueAnimator   动画 ofInt ofObject 设置 属性 区间
+* Interpolator  插值器/加速器
+* Evaluator 就是将从加速器返回的数字进度转成对应的数字值
 
 
 ## 
