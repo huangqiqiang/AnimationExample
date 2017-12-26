@@ -1,6 +1,5 @@
-package com.hqq.viewexample.activity
+package com.hqq.viewexample.activity.animate
 
-import android.animation.ObjectAnimator
 import android.animation.TimeInterpolator
 import android.animation.TypeEvaluator
 import android.animation.ValueAnimator
@@ -46,7 +45,7 @@ class ValueAnimatorActivity : AppCompatActivity() {
         }
 
         btn_ofChar.setOnClickListener {
-            var animation =ValueAnimator.ofObject(CharEvaluator (),'A','Z')
+            var animation =ValueAnimator.ofObject(CharEvaluator(),'A','Z')
             animation.addUpdateListener {
                 btn_ofChar.setText(animation.getAnimatedValue().toString())
             }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fillViewport="true"
-    tools:context="com.hqq.viewexample.activity.InterpolatorActivity">
+    tools:context="com.hqq.viewexample.activity.animate.InterpolatorActivity">
    <LinearLayout
        android:gravity="center_horizontal"
        android:orientation="vertical"

@@ -1,4 +1,4 @@
-package com.hqq.viewexample.activity
+package com.hqq.viewexample.activity.animate
 
 import android.animation.ObjectAnimator
 import android.support.v7.app.AppCompatActivity
