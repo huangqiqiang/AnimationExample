@@ -1,5 +1,8 @@
 package com.hqq.viewexample.activity
 
+import android.animation.IntEvaluator
+import android.animation.TimeInterpolator
+import android.animation.TypeEvaluator
 import android.animation.ValueAnimator
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -36,27 +39,56 @@ class ValueAnimatorActivity : AppCompatActivity() {
             translateAnimation.duration = 1000
             btn_TranslateAnimation.startAnimation(translateAnimation)
         }
-
-
-
         btn_ValueAnimator.setOnClickListener {
             doAnimation()
             Toast.makeText(this, "Click me", Toast.LENGTH_SHORT).show()
         }
-
     }
 
     private fun doAnimation() {
+        //  动画  getAnimatedValue 的区间
         var animation = ValueAnimator.ofInt(0, 400)
         animation.duration = 1400
         animation.addUpdateListener {
-
             var curValue = animation.getAnimatedValue();
             LogUtils.e(curValue)
-            btn_ValueAnimator.layout(curValue as Int, curValue as Int,
-                    curValue + btn_ValueAnimator.width,curValue + btn_ValueAnimator.height)
+            btn_ValueAnimator.layout(btn_ValueAnimator.left, curValue as Int,
+                    btn_ValueAnimator.right, curValue + btn_ValueAnimator.height)
         }
+        animation.repeatMode = ValueAnimator.REVERSE
+        animation.repeatCount = ValueAnimator.INFINITE
+
+        /**
+         * 理解为 从adapter 中获取 数据
+         * ofInt   相当于  是map
+         * LinearInterpolator  类似 于key
+         * MyIntEvaluator  类似 于 valeu
+         * getAnimatedValue  根据 这些 去获取   执行  属性 动画
+         */
+
+        animation.interpolator = LinearInterpolator();
+        animation.setEvaluator(MyIntEvaluator())
         animation.start()
 
+    }
+
+    class LinearInterpolator : TimeInterpolator {
+        override fun getInterpolation(input: Float): Float {
+            /**
+             * 参数input:input参数是一个float类型，它取值范围是0到1，表示当前动画的进度，取0时表示动画刚开始，取1时表示动画结束，取0.5时表示动画中间的位置，其它类推。
+            返回值：表示当前实际想要显示的进度。取值可以超过1也可以小于0，超过1表示已经超过目标值，小于0表示小于开始位置。
+             */
+            LogUtils.e("getInterpolation" + input)
+            return 1 - input
+
+        }
+    }
+
+    class MyIntEvaluator : TypeEvaluator<Int> {
+        override fun evaluate(fraction: Float, startValue: Int?, endValue: Int?): Int? {
+            val startInt = startValue!!
+            LogUtils.e("MyIntEvaluator" + (startInt + fraction * (endValue!! - startInt)).toInt())
+            return (startInt + fraction * (endValue!! - startInt)).toInt()
+        }
     }
 }
