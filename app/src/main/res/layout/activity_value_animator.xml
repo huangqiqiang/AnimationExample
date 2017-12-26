@@ -26,5 +26,22 @@
         android:layout_marginStart="21dp"
         android:text="ValueAnimator " />
 
+    <Button
+        android:id="@+id/btn_ofChar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_TranslateAnimation"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/btn_TranslateAnimation"
+        android:layout_toRightOf="@+id/btn_TranslateAnimation"
+        android:text="ofChar" />
+
+
+    <com.hqq.viewexample.view.PointView
+        android:id="@+id/pv_point"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </RelativeLayout>

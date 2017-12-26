@@ -1,6 +1,5 @@
 package com.hqq.viewexample.activity
 
-import android.animation.IntEvaluator
 import android.animation.TimeInterpolator
 import android.animation.TypeEvaluator
 import android.animation.ValueAnimator
@@ -39,13 +38,47 @@ class ValueAnimatorActivity : AppCompatActivity() {
             translateAnimation.duration = 1000
             btn_TranslateAnimation.startAnimation(translateAnimation)
         }
+        //  属性 动画
         btn_ValueAnimator.setOnClickListener {
-            doAnimation()
+            doAnimationOfInt()
             Toast.makeText(this, "Click me", Toast.LENGTH_SHORT).show()
         }
+
+        btn_ofChar.setOnClickListener {
+            var animation =ValueAnimator.ofObject(CharEvaluator (),'A','Z')
+            animation.addUpdateListener {
+                btn_ofChar.setText(animation.getAnimatedValue().toString())
+            }
+            animation.setDuration(3400)
+            animation.start()
+
+
     }
 
-    private fun doAnimation() {
+
+        pv_point.setOnClickListener{
+
+            pv_point.doPointAnim()
+
+        }
+
+    }
+
+    class CharEvaluator : TypeEvaluator<Char> {
+        override fun evaluate(fraction: Float, startValue: Char?, endValue: Char?): Char {
+          var valeue : Char = 'A';
+            if (startValue != null) {
+                if (endValue != null) {
+                    valeue=    (startValue.toInt() + fraction * (endValue.toInt() - startValue .toInt() )).toChar()
+                }
+            }
+
+            return valeue;
+        }
+
+    }
+
+    private fun doAnimationOfInt() {
         //  动画  getAnimatedValue 的区间
         var animation = ValueAnimator.ofInt(0, 400)
         animation.duration = 1400

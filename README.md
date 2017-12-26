@@ -1,4 +1,5 @@
 # 动画 学习Demo与自定义View:  ViewExample
+学习参考: http://blog.csdn.net/harvic880925/article/details/50995268
 ## 帧动画  Drawable Animation 
   比较有针对性，只是图片的替换
 ## 补间动画 View Animation（Tween Animation）
