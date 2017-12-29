@@ -15,17 +15,16 @@
         <activity android:name=".activity.animate.XmlAttributesActivity" />
         <activity android:name=".activity.animate.InterpolatorActivity" />
         <activity android:name=".activity.animate.ValueAnimatorActivity" />
-        <activity android:name=".activity.animate.ObjectAnimatorActivity"></activity>
-        <activity android:name=".activity.animate.PropertyValuesHolderActivity">
+        <activity android:name=".activity.animate.ObjectAnimatorActivity" />
+        <activity android:name=".activity.animate.PropertyValuesHolderActivity"></activity>
+        <activity android:name=".activity.animate.AnimatorSetActivity">
 
         </activity>
-        <activity android:name=".activity.animate.AnimatorSetActivity">
+        <activity android:name=".activity.view.ViewBaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

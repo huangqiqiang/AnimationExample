@@ -32,8 +32,6 @@ class AnimatorSetActivity : AppCompatActivity() {
 
             valueAnimator.start()
         }
-
-
     }
 
     private fun doPlaySequentiallyAnimator() {
