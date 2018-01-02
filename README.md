@@ -50,7 +50,7 @@
 * ValueAnimator   动画 ofInt ofObject 设置 属性 区间
 * ObjectAnimation
 * Interpolator  插值器/加速器
-* Evaluator 就是将从加速器返回的数字进度转成对应的数字值
+* Evaluator 将插值器返回的数字进度转成对应的值
 
 
 ##  属性动画的Demo 
