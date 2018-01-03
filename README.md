@@ -27,7 +27,7 @@
     - android:fromYDelta    起始点Y轴从标，可以是数值、百分数、百分数p 三种样式；
     - android:toXDelta         结束点X轴坐标
     - android:toYDelta        结束点Y轴坐标
-- set 集合 共有属性
+- Set 集合 共有属性
     - android:duration        动画持续时间，以毫秒为单位 
     - android:fillAfter          如果设置为true，控件动画结束时，将保持动画最后时的状态
     - android:fillBefore       如果设置为true,控件动画结束时，还原到开始动画前的状态
