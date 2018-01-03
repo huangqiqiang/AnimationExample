@@ -7,22 +7,55 @@
     tools:context="com.hqq.viewexample.MainActivity">
 
 
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="手写View"
-        />
-    <Button
-        android:id="@+id/btn_wave"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="波浪效果" />
-</LinearLayout>
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_handWriting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手写View" />
+
+        <Button
+            android:id="@+id/btn_wave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="波浪效果" />
+
+        <Button
+            android:id="@+id/btn_AnimatorSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AnimatorSet" />
+
+        <Button
+            android:id="@+id/btn_Interpolator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interpolator" />
+
+        <Button
+            android:id="@+id/btn_ObjectAnimator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ObjectAnimator" />
+
+        <Button
+            android:id="@+id/btn_PropertyValuesHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PropertyValuesHolderActivity" />  <Button
+            android:id="@+id/btn_ValueAnimator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ValueAnimatorActivity" /><Button
+            android:id="@+id/btn_XmlAttributes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XmlAttributesActivity" />
+    </LinearLayout>
 
 
 </ScrollView>
