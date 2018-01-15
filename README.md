@@ -53,6 +53,12 @@
 * Evaluator 将插值器返回的数字进度转成对应的值
 
 
-##  属性动画的Demo 
-* 手写画板
-* 贝塞尔波浪
+##  属性动画的Demo
+- 贝塞尔波浪 HandwritingViewo 
+    - 贝塞尔绘制
+    - 动画 移动
+- 手写画板 WaveView
+    - 手势监听  与 贝塞尔 绘制 
+- 圆形加载进度条 CircleProgressView
+    -  两个 drawArc 一个绘制背景 一个绘制进度   sweepAngle
+    -  drawText 绘制 文字    FontMetricsInt 计算文字大小 

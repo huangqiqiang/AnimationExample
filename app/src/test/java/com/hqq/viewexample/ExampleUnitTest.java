@@ -1,5 +1,7 @@
 package com.hqq.viewexample;
 
+import com.hqq.viewexample.Utils.LogUtils;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -13,5 +15,23 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);
+
+        LogUtils.e(new A().getA());
+
     }
+
+
+
+    class A {
+        int  a;
+
+        public int getA() {
+            return a;
+        }
+
+        public void setA(int a) {
+            this.a = a;
+        }
+    }
+
 }
