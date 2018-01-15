@@ -26,5 +26,7 @@ class CircleProgressActivity : AppCompatActivity() {
             cpv_CircleProgressView.setmCurrent(current.toInt())
         }
         animator.start()
+
+        mdv_MyDashView.startAnim()
     }
 }

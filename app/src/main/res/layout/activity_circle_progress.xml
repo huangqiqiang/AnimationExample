@@ -6,6 +6,21 @@
     tools:context="com.hqq.viewexample.activity.view.CircleProgressActivity">
 
 
+    <com.hqq.viewexample.view.MyDashView
+        android:id="@+id/mdv_MyDashView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.hqq.viewexample.view.BaseTextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.hqq.viewexample.view.BaseView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
     <com.hqq.viewexample.view.CircleProgressView
         android:id="@+id/cpv_CircleProgressView"
         android:layout_width="100dp"

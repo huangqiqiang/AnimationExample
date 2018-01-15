@@ -79,7 +79,6 @@ public class HandwritingView extends View {
                 postInvalidate();
                 LogUtils.e("ACTION_MOVE  : " + event.getX() + "----" + event.getY());
                 return true;
-
         }
         return super.onTouchEvent(event);
     }
