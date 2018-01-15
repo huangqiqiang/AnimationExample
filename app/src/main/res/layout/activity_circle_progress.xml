@@ -7,6 +7,7 @@
 
 
     <com.hqq.viewexample.view.MyDashView
+        android:visibility="gone"
         android:id="@+id/mdv_MyDashView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -23,8 +24,12 @@
         android:layout_height="match_parent" />
     <com.hqq.viewexample.view.CircleProgressView
         android:id="@+id/cpv_CircleProgressView"
+        android:visibility="gone"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerInParent="true" />
-
+    <com.hqq.viewexample.view.RedPointView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.hqq.viewexample.view.RedPointView>
 </RelativeLayout>
