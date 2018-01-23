@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".activity.HandwritingActivity" />
         <activity android:name=".activity.WaveActivity" />
         <activity android:name=".activity.animate.XmlAttributesActivity" />
@@ -20,8 +18,11 @@
         <activity android:name=".activity.animate.ObjectAnimatorActivity" />
         <activity android:name=".activity.animate.PropertyValuesHolderActivity" />
         <activity android:name=".activity.animate.AnimatorSetActivity" />
-        <activity android:name=".activity.view.ViewBaseActivity"></activity>
+        <activity android:name=".activity.view.ViewBaseActivity" />
         <activity android:name=".activity.view.CircleProgressActivity">
+
+        </activity>
+        <activity android:name=".activity.view.TempControlActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
