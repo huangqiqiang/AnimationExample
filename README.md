@@ -370,3 +370,6 @@ void drawPoints (float[] pts, int offset, int count, Paint paint)
 - 圆形加载进度条 CircleProgressView
     -  两个 drawArc 一个绘制背景 一个绘制进度   sweepAngle
     -  drawText 绘制 文字    FontMetricsInt 计算文字大小 
+- 自定义控件 温度旋转按钮 TempControlView
+    - canvas 的应用 保存 取出  旋转 移动  
+    - 手势 屏幕 角度的判断 
