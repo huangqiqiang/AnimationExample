@@ -16,17 +16,16 @@
 - Evaluator 将插值器返回的数字进度转成对应的值
 
 ## View 的基本属性
-
 - 几何图形 -> 位于 Canvas 下 
-[MORE](https://github.com/huangqiqiang/ViewExample/blob/master/Canvas.md)   
+     [MORE](https://github.com/huangqiqiang/ViewExample/blob/master/Canvas.md)   
 - Paint 
- [MORE](https://github.com/huangqiqiang/ViewExample/blob/master/Paint.md)
-  - FontMetrics   文字的 5 条 线   
- [MORE](https://github.com/huangqiqiang/ViewExample/blob/master/FontMetrics.md)
+     [MORE](https://github.com/huangqiqiang/ViewExample/blob/master/Paint.md)
+- FontMetrics   文字的 5 条 线   
+     [MORE](https://github.com/huangqiqiang/ViewExample/blob/master/FontMetrics.md)
 - Path 将多种复合路径（多个轮廓，如直线段、二次曲线、立方曲线）封装在其内部的几何路径 (BaseView)
- [MORE](https://github.com/huangqiqiang/ViewExample/blob/master/Path.md)
+     [MORE](https://github.com/huangqiqiang/ViewExample/blob/master/Path.md)
 - 区域（Range）
- [MORE](https://github.com/huangqiqiang/ViewExample/blob/master/Range.md)
+     [MORE](https://github.com/huangqiqiang/ViewExample/blob/master/Range.md)
 
 
 ##  属性动画自定义View  Demo
